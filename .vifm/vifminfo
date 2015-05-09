@@ -1,0 +1,113 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Bookmarks:
+'H
+	/home/dsxyr/
+	../
+1430719812
+'b
+	/home/dsxyr/bin/
+	../
+1430719812
+'h
+	/home/dsxyr/
+	../
+1430719812
+'z
+	/home/dsxyr/.vifm
+	../
+1430719812
+
+# TUI:
+ar
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/dsxyr
+	../
+0
+d/home
+	../
+0
+d/
+	run/
+13
+d/run
+	../
+0
+d/
+	run/
+13
+d/run
+	../
+0
+d/
+	run/
+13
+d/run
+	../
+0
+d/
+	run/
+13
+d/run
+	../
+0
+d/
+	home/
+4
+d/home
+	dsxyr/
+1
+d/home/dsxyr
+	dsxyr/
+10
+d/home/dsxyr/dsxyr
+	sources.list
+11
+d
+
+# Right window history (oldest to newest):
+D/home/dsxyr
+	Templates/
+7
+D/home/dsxyr/Templates
+	../
+0
+D
+
+# Command line history (oldest to newest):
+:h
+:qq
+:q
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/home/dsxyr/.vifm/Trash/000_nate~
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/dsxyr/.vifm/Trash/000_nate~
+	/home/dsxyr/dsxyr/nate~
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0

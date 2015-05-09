@@ -1,0 +1,22 @@
+dpkg --add-architecture i386
+api libgl1-fglrx-glx:i386
+
+amdcccle   bcloud-gui
+openbox tint2 feh conky volumeicon-alsa vim vlc gnome-terminal pidgin xcompmgr compton
+screensaver
+cairo-dock -oc || docky
+wicd-gtk || network-manager-applet
+fcitx || ibus
+firefox || chromium
+deluge || filezilla
+qt-sdk
+vim vim-gtk emacs
+rhythmbox
+im-config
+virtualbox
+eog
+nautilus
+synaptic
+zim
+gnome-disk-utility
+gnome-packagekit

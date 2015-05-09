@@ -1,0 +1,189 @@
+
+/==(/ + /boot + /bin + /sbin)==500MB+
+/tmp==100MB+
+/var==100MB+
+/home==100MB+
+/usr==700MB+ with X
+/usr/local ==100MB
+
+echo $PS1
+PS1="\u |\t| \w\$"
+cd
+mv
+rm
+cp   rR digui
+ln
+touch
+mkdir
+rmdir
+
+stat
+file
+cat -[a|b]
+more
+less
+tail
+head
+
+ps -efH[l]
+top 
+kill PID
+killall
+
+mount -t type [-o loop] device directory
+
+mount -t iso9660 -o loop /home/dsxyr/下载/debian.iso /mnt/apt
+mount -t iso9660 -o loop /home/dsxyr/下载/debian-7.6.0-i386-DVD-3.iso /mnt/apt2
+mount -t iso9660 -o loop /home/dsxyr/下载/debian-7.6.0-i386-DVD-3.iso /mnt/apt3
+
+deb file:/mnt/apt wheezy main
+deb file:/mnt/apt2 wheezy main
+deb file:/mnt/apt3 wheezy main
+
+
+umount [device|directory]
+df -h
+du [-ch|s]
+
+sort -nM[r] file
+grep pattern file
+ bzip2
+bzcat
+bunzip2
+bzip2recover
+gzip
+gzcat
+gunzip
+zip
+zipcloak
+zipnote
+zipsplit
+unzip
+tar -cvf xx.tar x1/ x2/
+tar -tf xx.tar
+tar -xvf xx.tar
+tar -zxvf xx.tgz
+
+
+printenv
+unset
+
+alias -p
+
+cat /etc/passwd
+/etc/group
+useradd -D
+userdel
+usermod
+passwd
+chpasswd
+chage
+chfn
+chsh
+
+chmod 
+
+
+________________________________________________________________
+gnome 
+侧边栏计算机中的文件夹
+vim ~/.config/user-dirs.dirs
+xdg-user-dirs-update
+顶部面板的图标
+sudo vim /usr/share/gnome-shell/js/ui/panel.js
+应用程序图标大小
+sudo vim /usr/share/gnome-shell/theme/gnome-shell.css
+icon-grid
+
+减少标题栏高度
+sudo sed -i '/title_vertical_pad/s|value="[0-9]\{1,2\}"|value="0"|g' /usr/share/themes/Adwaita/metacity-1/metacity-theme-3.xml
+
+
+sudo sed -i -r 's|(<frame_geometry name="max")|\1 has_title="false"|' /usr/share/themes/Adwaita/metacity-1/metacity-theme-3.xml
+
+
+登 录 GNOME 3 后 自 动 启 动 程 序
+gnome-session-properties
+
+gconf-editor
+dconf-editor
+
+
+阻止软件包升级
+有两种方法阻止软件包升级,使用 dpkg,或者在 Woody 中使用 APT。
+使用 dpkg,首先导出软件包选择列表:
+dpkg --get-selections \* > selections.txt
+接着编辑文件 selections.txt,修改想要恢复的软件所在的行,例如 libc6,则将:
+libc6 install
+改为:
+libc6 hold
+保存文件,将它装入 dpkg 数据库:
+dpkg --set-selections < selections.txt
+或者,如果你知道要恢复的软件包名称,执行:
+echo libc6 hold | dpkg --set-selections
+
+这个命令将在每个软件包安装过程中保持该软件包不变。
+ 
+使用 dselect 也可以达到同样的效果。进入 [S]elect 屏幕,找到想阻止其升级的软件包,按
+“=”键(或者“H”)。更改在你退出 [S]elect 屏幕后立即生效。
+
+源码包发布在 source 目录中,既可以手工下载可以使用
+apt-get source foo
+
+编译源码包
+对于 foo 软件包,从源码编译需要 foo_*.dsc、foo_*.tar.gz 和 foo_*.diff.gz 文件(注意,对于由 Debian 开发的软件包,没有 .diff.gz 文件)。
+当你得全了这些文件,如果你这安装了 dpkg-dev 软件包,运行:
+$ dpkg-source -x foo_version-revision.dsc
+它将软件包解压到一个名为 foo-version 的目录。
+使用下列命令创建二进制软件包:
+$ cd foo-version
+$ su -c "apt-get update ; apt-get install fakeroot"
+$ dpkg-buildpackage -rfakeroot -us -uc
+然后,
+# su -c "dpkg -i ../foo_version-revision_arch.deb"
+
+vim:
+    quickfix:假如我们有一个 hello.cpp 文件和一个 makefile，于是我们可以直接在 vim 下输入 :make ， 于是就可以 make 这个 hello.cpp 文件，如果出错了，我们需要按回车返回，这个时候，我们可以使用下面的命令
+        :cw         把出错显到在 vim 的分屏中
+        :cp 跳到上一个错误
+        :cn 跳到下一个错误
+        :cl 列出所有错误
+        :cc 显示错误详细信息
+
+字符设置
+
+dpkg-reconfigure locales
+dpkg-reconfigure grub-pc
+
+liux  内核安装
+
+make defconfig
+make nconfig
+make-kpkg clean
+fakeroot make-kpkg --initrd --append-to-version=sysy kernel_image kernel-headers
+
+./configure && make && make install
+
+./configure && make && checkinstall 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
