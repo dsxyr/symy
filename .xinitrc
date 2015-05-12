@@ -8,7 +8,9 @@
 #. /etc/X11/Xsession
 
 export LANG="zh_CN.UTF-8"
+export LC_ALL="zh_CN.UTF-8"
 export SYSFONT="fonts-wqy-microhei"
+export LANGUAGE=zh_CN:zh
 
 #export XIM=fcitx
 #export XIM_PROGRAM=/usr/bin/fcitx

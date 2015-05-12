@@ -1,0 +1,44 @@
+## apt-key adv --keyserver keyserver.ubuntu.com --recv-keys
+
+
+# firefox next CE49EC21
+#deb http://ppa.launchpad.net/mozillateam/firefox-next/ubuntu vivid main
+#deb-src http://ppa.launchpad.net/mozillateam/firefox-next/ubuntu vivid main
+
+# firefox aurora  247510BE
+deb http://ppa.launchpad.net/ubuntu-mozilla-daily/firefox-aurora/ubuntu vivid main
+deb-src http://ppa.launchpad.net/ubuntu-mozilla-daily/firefox-aurora/ubuntu vivid main
+
+# firefox nightly 247510BE
+deb http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu vivid main
+deb-src http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu vivid main
+
+# java  EEA14886
+deb http://ppa.launchpad.net/webupd8team/java/ubuntu vivid main
+deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu vivid main
+
+# pidgin-lwqq 949045F5
+deb http://ppa.launchpad.net/lainme/pidgin-lwqq/ubuntu vivid main
+deb-src http://ppa.launchpad.net/lainme/pidgin-lwqq/ubuntu vivid main
+
+# 流媒体
+deb http://ppa.launchpad.net/webupd8team/popcorntime/ubuntu vivid main
+deb-src http://ppa.launchpad.net/webupd8team/popcorntime/ubuntu vivid main
+
+# kali reaver
+#deb http://mirrors.ustc.edu.cn/kali kali main non-free contrib
+#deb-src http://mirrors.ustc.edu.cn/kali kali main non-free contrib
+#deb http://mirrors.ustc.edu.cn/kali-security kali/updates main contrib non-free
+
+# picty C99E40E1
+deb http://ppa.launchpad.net/damien-moore/ppa/ubuntu vivid main
+deb-src http://ppa.launchpad.net/damien-moore/ppa/ubuntu vivid main
+
+# plank 9E5DB0C8
+#deb http://ppa.launchpad.net/ricotz/docky/ubuntu vivid main
+#deb-src http://ppa.launchpad.net/ricotz/docky/ubuntu vivid main
+
+# grub 3F055C03
+deb http://ppa.launchpad.net/danielrichter2007/grub-customizer/ubuntu vivid main
+deb-src http://ppa.launchpad.net/danielrichter2007/grub-customizer/ubuntu vivid main
+

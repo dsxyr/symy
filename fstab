@@ -6,19 +6,15 @@
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
 # / was on /dev/sda7 during installation
-UUID=838bfcd4-ec7a-40f7-92f7-233c8f98b927 /               ext4    errors=remount-ro 0       1
+UUID=f1d2ca27-cb70-4c37-959f-b005ea454f4d /               ext4    errors=remount-ro 0       1
 # /boot/efi was on /dev/sda6 during installation
 UUID=8683-6271  /boot/efi       vfat    umask=0077      0       1
 # /home was on /dev/sda9 during installation
 UUID=535b0466-5a4f-4844-8d93-7fcc26a6c91c /home           ext4    defaults        0       2
 # swap was on /dev/sda8 during installation
-UUID=adf63b40-06d6-470a-bb31-ec110dd3eb30 none            swap    sw              0       0
-/dev/sdb1       /media/usb0     auto    rw,user,noauto  0       0
-
-
+UUID=258109a8-adb0-4d94-8bbb-df23e499eaa0 none            swap    sw              0       0
 
 # windows
-#/dev/sda3       /media/D        ntfs-3g rw,user,iocharset=utf8,umask=000,nls=utf8       0       0
-#/dev/sda4       /media/E        ntfs-3g rw,user,iocharset=utf8,umask=000,nls=utf8       0       0
-#/dev/sda5       /media/F        ntfs-3g rw,user,iocharset=utf8,umask=000,nls=utf8       0       0
-
+/dev/sda3	/media/D        ntfs-3g	rw,user,iocharset=utf8,umask=000,nls=utf8	0	0
+/dev/sda4	/media/E	ntfs-3g	rw,user,iocharset=utf8,umask=000,nls=utf8	0	0
+/dev/sda5	/media/F	ntfs-3g	rw,user,iocharset=utf8,umask=000,nls=utf8	0	0
