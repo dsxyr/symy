@@ -34,11 +34,13 @@ gnome-shell
     gnome-terminal          虚拟终端
     pidgin                  通讯平台
     xcompmgr compton        X特效
+    screensavers
     wicd-gtk || network-manager-applet
     cairo-dock -oc || docky
     fcitx || ibus
 tmux zsh vim 
 gcc make gdb git docker 
+grub customizer
 wine
 bcloud-gui
 HAL 硬件侦测
