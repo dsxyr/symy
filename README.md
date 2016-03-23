@@ -4,7 +4,7 @@
 * nate    杂记
 
 github
-为了使用SSH公钥的方式认证，我把config的url改成下面这样
+为了使用SSH公钥的方式认证，我把`./.git/config`的url改成下面这样
 ```
     [remote "origin"]  
         fetch = + refs/heads/*:refs/remotes/origin/*  
