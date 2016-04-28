@@ -8,9 +8,9 @@ apt-get update
 echo install ui
 apt-get install xorg
 apt-get install openbox
-echo installl dirver
+echo install dirver
 apt-get install build-essential linux-headers-$(uname -r) module-assistant
-echo installl desk
+echo install desk
 apt-get install tint2 feh conky volumeicon-alsa compton  xscreensaver amd64-microcode
 echo install tools
 apt-get install virtualbox deluge tmux vim vlc  ibus chromium filezilla audacious evince stardict synaptic texmaker apvlv vifm xfe qt-sdk
