@@ -15,6 +15,6 @@ UUID=535b0466-5a4f-4844-8d93-7fcc26a6c91c /home           ext4    defaults      
 UUID=258109a8-adb0-4d94-8bbb-df23e499eaa0 none            swap    sw              0       0
 
 # windows
-/dev/sda3	/media/D        ntfs-3g	rw,user,iocharset=utf8,umask=000,nls=utf8	0	0
+/dev/sda3	/media/D    ntfs-3g	rw,user,iocharset=utf8,umask=000,nls=utf8	0	0
 /dev/sda4	/media/E	ntfs-3g	rw,user,iocharset=utf8,umask=000,nls=utf8	0	0
 /dev/sda5	/media/F	ntfs-3g	rw,user,iocharset=utf8,umask=000,nls=utf8	0	0
