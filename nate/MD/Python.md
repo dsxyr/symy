@@ -3,9 +3,6 @@ Python
 * 包管理器:pip  
 * 版本兼容:pyenv,virtualenv  
 * web框架:Flask,Django  
-powershell若要在本地计算机上运行您编写的未签名脚本和来自其他用户的签名脚本，请使用以下命令将计算机上的
-执行策略更改为 RemoteSigned：
-set-executionpolicy remotesigned
 ---------------------------------
 ####正则表达式
 ####网页模板

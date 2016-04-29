@@ -3,38 +3,13 @@
 * archlinux  
 * debian  
 ---------
-xorg
-openbox
-gnome-session
-gnome-terminal
-gnome-control-center
-thunar
-MonsterWM+bar+Dmenu+Feh+Scripts+URxvt
-资源链接
-
-    MonsterWM 源码：https://github.com/c00kiemon5ter/monsterwm
-
-    Bar 源码：https://github.com/LemonBoy/bar
-
-    Dmenu 官网：http://tools.suckless.org/dmenu
-
-    Feh 官网：http://feh.finalrewind.org
-
-    各种脚本：https://github.com/xuxiaodong/bin
-
-    讨论：https://bbs.archlinux.org/viewtopic.php?id=132122
-
-    幻灯源码、所用配置及脚本：https://github.com/xuxiaodong/mwm-slide
-
-
-
 ####管理工具
 * systemd  
-    `systemd-analyze` 启动进程耗时  
-    `systemd-analyze blame` 各进程启动耗时  
-    `systemd-analyze critical-chain` 进程启动链 可接具体服务  
-    `systemd-cgls` 控制组等级列出  
-    `systemd-cgtop`
+        `systemd-analyze` 启动进程耗时  
+        `systemd-analyze blame` 各进程启动耗时  
+        `systemd-analyze critical-chain` 进程启动链 可接具体服务  
+        `systemd-cgls` 控制组等级列出  
+        `systemd-cgtop`
     1. timedatectl  
             timedatectl 2015-02-04  
             timedatectl 22:04:43  
@@ -101,9 +76,7 @@ MonsterWM+bar+Dmenu+Feh+Scripts+URxvt
 * 网络配置  
 静态IP,DNS
 ----------
-`whereis`      安装位置  
-`ps -eaf | grep [s]ystemd`  
-`grep`  
+
 
 
 

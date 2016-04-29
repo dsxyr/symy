@@ -95,9 +95,9 @@ mkinitcpio -p linux
 passwd  
 * bootloader  
     * [GPT]   
-# pacman -S dosfstools grub efibootmgr
-# grub-install --target=x86_64-efi --efi-directory=<EFI 分区挂载点> --bootloader-id=arch_grub --recheck
-# grub-mkconfig -o /boot/grub/grub.cfg  
+        pacman -S dosfstools grub efibootmgr
+        grub-install --target=x86_64-efi --efi-directory=<EFI 分区挂载点> --bootloader-id=arch_grub --recheck
+        grub-mkconfig -o /boot/grub/grub.cfg  
     * [MBR]   
         pacman -S grub os-prober   
         grub-install /dev/sda   
@@ -121,36 +121,36 @@ useradd -m -G wheel,users -s /usr/bin/zsh -p <password> <username>
 passwd username
 
 * 终端字体：
-# ls /usr/share/kbd/consolefonts/	# 查看可用终端字体
+# ls /usr/share/kbd/consolefonts/  查看可用终端字体
 # setfornt <终端字体>
 * 网络
     * 有线连接：
-    # systemctl start dhcpcd    # 连接
-    # # systemctl enable dhcpcd 以自动连接
+    systemctl start dhcpcd   
+    systemctl enable dhcpcd 
     * 无线连接：
-    # pacman -S iw wpa_supplicant dialog
-    # wifi-menu	# 连接
+    pacman -S iw wpa_supplicant dialog
+    wifi-menu	
     * ADSL 宽带连接：
-    # pacman -S rp-pppoe
-    # pppoe-setup    # 配置
-    # systemctl start adsl    # 连接
-    # systemctl enable adsl 以自动连接
-    
+    pacman -S rp-pppoe
+    pppoe-setup   
+    systemctl start adsl   
+    systemctl enable adsl
 * sed -i '/Score/{/China/!{n;s/^/#/}}' /etc/pacman.d/mirrorlist
-
 * lspci | grep VGA # 确定显卡型号
 pacman -S xf86-video-
-
 * pacman -S ttf-dejavu wqy-microhei alsa-utils
-
 * fcitx：
-
     安装 fcitx：
-    # pacman -S fcitx-im fcitx-configtool
+    pacman -S fcitx-im fcitx-configtool
     配置：
     export GTK_IM_MODULE=fcitx
     export QT_IM_MODULE=fcitx
     export XMODIFIERS="@im=fcitx"
+    KDM、GDM、LightDM 等显示管理器的用户，向 ~/.xprofile添加以上命令。
+    startx 与 slim 的用户，向 ~/.xinitrc，在 exec 语句前添加以上命令
 
-        KDM、GDM、LightDM 等显示管理器的用户，向 ~/.xprofile添加以上命令。
-        startx 与 slim 的用户，向 ~/.xinitrc，在 exec 语句前添加以上命令
+* 在virtualbox中安装arch，把kernel模块加上；
+pacman -S virtualbox-guest-utils
+echo vboxguest >> /etc/modules-load.d/vbox.conf
+echo vboxsf >> /etc/modules-load.d/vbox.conf
+echo vboxvideo >> /etc/modules-load.d/vbox.conf
