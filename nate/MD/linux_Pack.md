@@ -41,6 +41,7 @@
 ####字体
     wqy-microhei、ttf-arphic-ukai、ttf-arphic-uming
 
+amdcccle  
 tmux,zsh
 grub,customizer
 bcloud-gui
