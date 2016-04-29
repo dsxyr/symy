@@ -65,5 +65,3 @@ MonsterWM+bar+Dmenu+Feh+Scripts+URxvt
     各种脚本：https://github.com/xuxiaodong/bin
     讨论：https://bbs.archlinux.org/viewtopic.php?id=132122
     幻灯源码、所用配置及脚本：https://github.com/xuxiaodong/mwm-slide
-
-pacman -S virtualbox-guest-utils
