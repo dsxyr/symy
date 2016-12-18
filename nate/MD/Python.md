@@ -6,6 +6,11 @@ Python
 ---------------------------------
 ####正则表达式
 ####网页模板
+####virtualenv
+pip install virtualenv
+cd ~/xxx
+virtualenv env
+
 ####Django
 * django-admin startproject project-name   
 * manage startapp app-name  
